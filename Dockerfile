@@ -8,4 +8,4 @@ RUN cd /root && bash -x snx_install.sh
 ADD scrics/snx.sh /root
 RUN chmod +x /root/snx.sh
 
-#CMD ["/root/snx.sh"]
+CMD ["/root/snx.sh"]
