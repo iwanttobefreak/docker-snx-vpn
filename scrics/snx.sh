@@ -18,4 +18,4 @@ EOF
 #iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 #iptables -A FORWARD -i tunsnx -j ACCEPT
 
-#read a
+read a
