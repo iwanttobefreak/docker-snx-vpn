@@ -13,9 +13,7 @@ expect "SNX - connected."
 interact
 EOF
 
+iptables -t nat -A POSTROUTING -o tunsnx -j MASQUERADE
+iptables -A FORWARD -i eth0 -j ACCEPT
 
-
-#iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
-#iptables -A FORWARD -i tunsnx -j ACCEPT
-
-read a
+/bin/bash
